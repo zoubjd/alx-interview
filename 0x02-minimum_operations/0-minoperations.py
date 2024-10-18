@@ -30,17 +30,6 @@ def findprimefactors(n: int) -> typing.List[int]:
     return primelist
 
 
-def findmax(alist: typing.List[int]) -> int:
-    maximum = alist[0]
-    index = 0
-    for i in range(len(alist)):
-        if alist[i] > maximum:
-            maximum = alist[i]
-            index = i
-
-    return (maximum, index)
-
-
 def minOperations(n: int) -> int:
     """minimum operation"""
     if n <= 0:
