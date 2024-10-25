@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """Log parsing script that reads from standard input and computes statistics."""
 import sys
+from time import sleep
+import random
 
 
 # Initialize the total file size and a dictionary to count occurrences of each status code
@@ -58,6 +60,7 @@ try:
             print_stats()
 
 except KeyboardInterrupt:
-    # If the script is interrupted, print the final statistics before exiting "just configed git and needed to push" 
+    # If the script is interrupted, print the final statistics before exiting
     print_stats()
+    sleep(random.random())
     raise
