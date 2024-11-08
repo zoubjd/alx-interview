@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """backtracking algorithm to solve n queens problem"""
 import sys
 
