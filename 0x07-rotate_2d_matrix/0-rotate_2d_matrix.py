@@ -2,10 +2,9 @@
 """
 Test 0x07 - Rotate 2D Matrix
 """
-from typing import List
 
 
-def rotate(matrix: List[int]) -> List[int]:
+def rotate(matrix):
     """rotates the list the wrong way LOL"""
     n = len(matrix)
 
@@ -19,7 +18,7 @@ def rotate(matrix: List[int]) -> List[int]:
     return matrix
 
 
-def rotate_2d_matrix(matrix: List[int]) -> List[int]:
+def rotate_2d_matrix(matrix):
     """rotates the matrix till it's the right way"""
     for _ in range(3):
         matrix = rotate(matrix)
