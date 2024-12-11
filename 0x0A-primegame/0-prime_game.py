@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """prime game"""
+from typing import List
 
 
 def isPrime(n):
@@ -16,7 +17,8 @@ def primeList(num):
     return [i for i in range(2, num + 1) if isPrime(i)]
 
 
-def isWinner(x, nums):
+def isWinner(x: int, nums: List[int]) -> str:
+    """determines the winner"""
     if x <= 0 or len(nums) == 0 or x > len(nums):
         return None
 
