@@ -19,6 +19,8 @@ def primeList(num):
 
 def isWinner(x: int, nums: List[int]) -> str:
     """determines the winner"""
+    if not isinstance(nums, list):
+        return None
     if x <= 0 or len(nums) == 0 or x > len(nums):
         return None
 
